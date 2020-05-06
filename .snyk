@@ -1,6 +1,13 @@
-version: v1.5.2
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
 ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:request:20160119':
     - blessed-contrib > picture-tube > request:
         patched: '2016-12-07T21:57:54.700Z'
+  SNYK-JS-LODASH-567746:
+    - snyk > inquirer > lodash:
+        patched: '2020-05-06T02:27:29.579Z'
+    - snyk > snyk-resolve-deps > lodash:
+        patched: '2020-05-06T02:27:29.579Z'
